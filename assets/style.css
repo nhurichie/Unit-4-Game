@@ -3,6 +3,10 @@ body {
     font-family: 'Fira Sans', sans-serif;
 }
 
+.text-center {
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+
 #instructions {
     margin-left: 100px;
     width: auto;
