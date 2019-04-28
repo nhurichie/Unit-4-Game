@@ -1,0 +1,89 @@
+body {
+    overflow-x: hidden;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#instructions {
+    margin-left: 100px;
+    width: auto;
+    height: auto;
+    float: none;
+}
+
+#randomNumberDisplay{
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+#randomNumber, #score {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:lightgreen;
+    color: lightcoral;
+    border-radius: 5px;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    margin-left: 10px;
+}
+
+#score {
+    color:lightcoral;
+}
+
+#scoreWinsLosses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 15%;
+    height: 15%;
+    padding-bottom: 35px;
+}
+
+#crystalsImages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#totalScoreCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: 10%;
+}
+
+
+p, strong {
+    font-size: 18px;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+button {
+    display: block;
+    border-radius: 10px;
+    outline: none;
+}
+
+button:hover {
+    box-shadow:white;
+    top: 2px;
+}
+
+button:active {
+    box-shadow: none;
+    top: 2px;
+}
+
+img {
+    border-radius: 15px;
+}
