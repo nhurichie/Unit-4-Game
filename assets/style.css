@@ -18,7 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-left: 40px;
-    margin-top: 5px;
+    margin-top: 6px;
 }
 
 #randomNumber, #score {
@@ -27,10 +27,10 @@ body {
     align-items: center;
     background-color:lightgreen;
     color: lightcoral;
-    border-radius: 5px;
-    width: 45px;
-    height: 45px;
-    font-size: 24px;
+    border-radius: 6px;
+    width: 42px;
+    height: 42px;
+    font-size: 26px;
     margin-left: 10px;
 }
 
@@ -42,9 +42,9 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 15%;
-    height: 15%;
-    padding-bottom: 35px;
+    width: 14%;
+    height: 14%;
+    padding-bottom: 34px;
 }
 
 #crystalsImages {
@@ -59,8 +59,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 15%;
-    height: 10%;
+    width: 16%;
+    height: 12%;
 }
 
 
@@ -89,5 +89,5 @@ button:active {
 }
 
 img {
-    border-radius: 15px;
+    border-radius: 16px;
 }

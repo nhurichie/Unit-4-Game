@@ -9,7 +9,6 @@ $(document).ready(function() {
     let theTotScore = 0;
     let compNumbers = 0;
 
-
     $("#score").html(theTotScore);
  
     const genRandoNumbers = function() {
@@ -25,7 +24,6 @@ $(document).ready(function() {
         let random = Math.floor(Math.random() * 12 + 1);
         return random;
     }
-    
 
     //GENERATE RANDOM NUMBERS, PER CRYSTAL - ASSIGN VALUES
     const setCrystalNumbers = function() {
@@ -34,7 +32,6 @@ $(document).ready(function() {
         yellow += genCrystalNumbers();
         red += genCrystalNumbers();
     }
-
     setCrystalNumbers();
 
     // BUTTON CLICK TO CRYSTAL 
@@ -48,36 +45,35 @@ $(document).ready(function() {
         } else if(this.id === "green") {
             theTotScore += green;
         }
-    
-     // SET theTotScore to clicked CRYSTAL
-     $("#score").html(theTotScore);
-     scoreWinOrLose();
+            // SET theTotScore to clicked CRYSTAL
+            $("#score").html(theTotScore);
+            scoreWinOrLose();
  });
 
- const scoreWinOrLose = function() {
-    if(theTotScore === compNumbers) {
-        yourWins += 1;
-        $("#win").html(yourWins);
-        alert("You win!!");
-        reset();   
-    } else if(theTotScore > compNumbers) {
-        yourLosses += 1;
-        $("#loss").html(yourLosses);
-        alert("You lose!");
-        reset();
-    }
+    const scoreWinOrLose = function() {
+        if(theTotScore === compNumbers) {
+            yourWins += 1;
+            $("#win").html(yourWins);
+            alert("You win!!");
+            reset();   
+        } else if(theTotScore > compNumbers) {
+            yourLosses += 1;
+            $("#loss").html(yourLosses);
+            alert("You lose!");
+            reset();
+        }
 }
 
 // RESET VALUES = 0.
-const reset = function() {  
-    theTotScore = 0;
-    $("#score").html(theTotScore);
-    blue = 0;
-    green = 0;
-    yellow = 0;
-    red = 0;
-    compNumbers = 0;
-    setCrystalNumbers();
-    $("#randomNum").html(compNumbers += genRandoNumbers());
-}
+    const reset = function() {  
+        theTotScore = 0;
+        $("#score").html(theTotScore);
+        blue = 0;
+        green = 0;
+        yellow = 0;
+        red = 0;
+        compNumbers = 0;
+        setCrystalNumbers();
+        $("#randomNum").html(compNumbers += genRandoNumbers());
+    }
 });
